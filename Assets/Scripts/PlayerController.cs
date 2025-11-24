@@ -4,11 +4,11 @@ public class PlayerController : MonoBehaviour
 {
     // Public variables appear in the Inspector, so you can tweak them without editing code.
     public float moveSpeed = 4f;       // How fast the player moves left/right
-    
+
     //Jump realated variables for the Jump Feature (later)
     public float jumpForce = 8f;      // How strong the jump is (vertical speed)
     public Transform groundCheck;      // Empty child object placed at the player's feet
-    public float groundCheckRadius = 0.2f; // Size of the circle used to detect ground
+    public float groundCheckRadius = 0.5f; // Size of the circle used to detect ground
     public LayerMask groundLayer;      // Which layer counts as "ground" (set in Inspector)
 
     // Private variables are used internally by the script.
@@ -35,6 +35,9 @@ public class PlayerController : MonoBehaviour
         // If this circle overlaps any collider on the "Ground" layer, player is grounded.
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
+        Debug.Log("IsGrounded: " + isGrounded);
+
+
         // --- Jump ---
         // If player is grounded AND the Jump button (Spacebar by default) is pressed:
         if (isGrounded && Input.GetButtonDown("Jump"))
@@ -43,6 +46,6 @@ public class PlayerController : MonoBehaviour
             // Horizontal velocity stays the same.
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
-        
+       
     }
 }
