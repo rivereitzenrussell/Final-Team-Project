@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 3509670115363418159}
   - component: {fileID: 382790918846131932}
   - component: {fileID: -3769582139868423928}
+  - component: {fileID: -1372706588028614666}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -199,7 +200,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &3509670115363418159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -259,3 +260,17 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   jumpForce: 10
+--- !u!114 &-1372706588028614666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4818590870364828696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5676ecb74cc77a24caa7193f0e9bcf8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+  health: 100
+  damageAmount: 25
