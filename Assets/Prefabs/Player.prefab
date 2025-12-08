@@ -45,7 +45,6 @@ GameObject:
   - component: {fileID: 3106063699887995431}
   - component: {fileID: 3509670115363418159}
   - component: {fileID: 382790918846131932}
-  - component: {fileID: -3769582139868423928}
   - component: {fileID: -1372706588028614666}
   m_Layer: 0
   m_Name: Player
@@ -213,8 +212,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2397780d251f77489d6397adf2dd5a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
+  coins: 0
   moveSpeed: 4
   jumpForce: 8
+  extraJumpsValue: 1
   groundCheck: {fileID: 4893111801841509036}
   groundCheckRadius: 0.2
   groundLayer:
@@ -242,24 +243,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &-3769582139868423928
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4818590870364828696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fa3ed74e5c911b40872755a9074bc11, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DoubleJump
-  extraJumpsValue: 1
-  groundCheck: {fileID: 4893111801841509036}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  jumpForce: 10
 --- !u!114 &-1372706588028614666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -273,4 +256,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   health: 100
+  healthImage: {fileID: 0}
   damageAmount: 25
