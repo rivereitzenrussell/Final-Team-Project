@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 241122105668472496}
   - component: {fileID: 2677255542294669700}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platforms_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2903443488184675091}
   - component: {fileID: 8172242333588926457}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platforms_2 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,7 +189,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 277214855154610070}
-  m_Layer: 0
+  - component: {fileID: -7659350603145821039}
+  m_Layer: 6
   m_Name: Platorm(8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -219,6 +220,52 @@ Transform:
   - {fileID: 6689256464287883453}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &-7659350603145821039
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5040539242697213066}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 7.876025, y: -6.9942236}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.1792374, y: 0.16036177}
+  m_EdgeRadius: 0
 --- !u!1 &5087354756890968701
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,7 +276,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7135598884042900041}
   - component: {fileID: 1066421690294004206}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platforms_2 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -319,7 +366,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6689256464287883453}
   - component: {fileID: 5812509069011855574}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platforms_2 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -409,7 +456,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1960148877854942383}
   - component: {fileID: 8915555971995602580}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platforms_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -499,7 +546,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2368667033149916184}
   - component: {fileID: 1337393307584523268}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platforms_2 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -589,7 +636,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6205214439201140830}
   - component: {fileID: 2557136800188687908}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platforms_2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -605,7 +652,7 @@ Transform:
   m_GameObject: {fileID: 8653389422359255461}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.371, y: -7, z: 0}
+  m_LocalPosition: {x: 7.655, y: -7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -679,7 +726,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1511982371213029858}
   - component: {fileID: 8423243212397278248}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Platforms_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -695,7 +742,7 @@ Transform:
   m_GameObject: {fileID: 9107565578734657521}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.655, y: -7, z: 0}
+  m_LocalPosition: {x: 7.371, y: -7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

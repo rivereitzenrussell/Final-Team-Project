@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 4f;           // How fast the player moves left/right
 
     // --- Jump variables ---
-    public float jumpForce = 8f;           // Base jump force (vertical speed)
+    public float jumpForce = 4f;           // Base jump force (vertical speed)
     public int extraJumpsValue = 1;        // How many extra jumps allowed (1 = double jump, 2 = triple jump)
     private int extraJumps;                // Counter for jumps left
 
@@ -112,6 +112,11 @@ public class PlayerController : MonoBehaviour
             // Play squash sound effect
             SoundManager.Instance.PlaySFX("SQUASH");
         }
-    }
 
+        if(collision.gameObject.tag == "Strawberry")
+        {
+            extraJumps = 2;
+            Destroy(collision.gameObject);
+        }
+    }
 }
