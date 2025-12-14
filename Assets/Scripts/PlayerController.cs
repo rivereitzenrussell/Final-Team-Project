@@ -1,5 +1,7 @@
 using UnityEngine;
 
+
+
 public class PlayerController : MonoBehaviour
 {
     public int coins;
@@ -69,6 +71,9 @@ public class PlayerController : MonoBehaviour
                 // plyer jump sound
                 SoundManager.Instance.PlaySFX("JUMP");
             }
+
+     
+
         }
 
         // --- Animations ---
